@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading{
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right,purple,blue,lightgreen);
+    -webkit-background-clip: text;
+    text-shadow: 0 0 3 px blue;
+    animation: show 1s infinite alternate;
+    mix-blend-mode: difference;
+}
+@keyframes show{
+    100%{
+        text-shadow: 0 0 2px red;
+    }
+}
+body{
+    background: black;
+}
+.button{
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 66px;
+    background: linear-gradient(red,blue);
+    text-shadow: 0 10px 10px green;
+}
+.flexy{
+    display: flex;
+    flex-direction: column;
+}
+.centr{
+    align-items: center;
+}
+.row{
+    margin: 7px 0;
+}
+.row .input{
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    background: #264280;
+    border-radius: 5px;
+    font-size: 23px;
+}
